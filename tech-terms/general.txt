@@ -1,0 +1,17 @@
+hackathon
+esint
+GitHub
+GraphQL
+JavaScript
+jQuery
+api
+css
+html
+sdk
+vcs
+git
+npm
+ttd
+TestTheDocs
+vale
+dns
