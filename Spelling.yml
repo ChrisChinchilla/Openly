@@ -5,10 +5,12 @@ level: error
 custom: true
 code: false
 ignore:
-  - ttd/tech-terms/security.txt
-  - ttd/tech-terms/blockchain.txt
-  - ttd/tech-terms/devops.txt
-  - ttd/tech-terms/general.txt
-  - ttd/tech-terms/techwriting.txt
-  - ttd/tech-terms/mobile.txt
-  - ttd/tech-terms/java.txt
+  - openly/tech-terms/security.txt
+  - openly/tech-terms/blockchain.txt
+  - openly/tech-terms/devops.txt
+  - openly/tech-terms/general.txt
+  - openly/tech-terms/techwriting.txt
+  - openly/tech-terms/mobile.txt
+  - openly/tech-terms/java.txt
+  - openly/tech-terms/linux.txt
+  - openly/tech-terms/tech-slang.txt
