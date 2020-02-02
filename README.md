@@ -1,2 +1,3 @@
-# Openly
-A Vale linter style that aims to replicate Grammarly in an open source, privacy friendly way
+# Openly - Open source Grammarly
+
+This is a series of Vale styles to attempt to emulate some features of the commercial, and closed source, Grammarly. More to come.
