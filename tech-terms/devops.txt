@@ -1,4 +1,5 @@
 kubernetes
+k8s
 kubectl
 docker
 rkt
@@ -7,3 +8,6 @@ coreos
 AppVeyor
 openstack
 serverless
+vm
+nginx
+buildpack

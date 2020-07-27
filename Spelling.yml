@@ -2,7 +2,6 @@
 extends: spelling
 message: "Did you really mean '%s'?"
 level: error
-custom: true
 code: false
 ignore:
   - openly/tech-terms/security.txt
@@ -14,3 +13,9 @@ ignore:
   - openly/tech-terms/java.txt
   - openly/tech-terms/linux.txt
   - openly/tech-terms/tech-slang.txt
+  - openly/tech-terms/csharp.txt
+  - openly/tech-terms/ddd.txt
+  - openly/tech-terms/business.txt
+  - openly/tech-terms/monitoring.txt
+  - openly/tech-terms/apis.txt
+
