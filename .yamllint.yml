@@ -1,0 +1,8 @@
+rules:
+  # We only include a single document (without directives) in our rules, so
+  # the extra markup is unnecessary.
+  document-start: disable
+  # Many rules include a `link` key that can be relatively long.
+  #
+  # TODO: Should we change this?
+  line-length: disable

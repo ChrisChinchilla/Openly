@@ -1,5 +1,6 @@
 kubernetes
 k8s
+kustomize
 kubectl
 docker
 rkt

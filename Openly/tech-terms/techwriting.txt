@@ -4,3 +4,4 @@ documentarian
 markdown
 onboarding
 readme
+snagit
