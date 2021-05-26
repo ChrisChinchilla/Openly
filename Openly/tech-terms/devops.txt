@@ -12,3 +12,6 @@ serverless
 vm
 nginx
 buildpack
+grafana
+etcd
+daemonset
