@@ -3,6 +3,10 @@ extends: spelling
 message: "Did you really mean '%s'?"
 level: error
 code: false
+action:
+  name: suggest
+  params:
+    - spellings
 ignore:
   - openly/tech-terms/security.txt
   - openly/tech-terms/blockchain.txt
@@ -18,3 +22,5 @@ ignore:
   - openly/tech-terms/business.txt
   - openly/tech-terms/monitoring.txt
   - openly/tech-terms/apis.txt
+  - openly/tech-terms/geospatial.txt
+  - openly/tech-terms/javascript.txt
