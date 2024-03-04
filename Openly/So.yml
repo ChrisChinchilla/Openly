@@ -4,4 +4,4 @@ message: "Don't start a sentence with '%s'"
 ignorecase: true
 level: error
 raw:
-  - '?<=[.;?!]\s)(?:[.-]?\s*)so\b'
+  - '(?<=[.;?!]\s)(?:[.-]?\s*)so\b'
