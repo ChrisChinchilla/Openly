@@ -1,6 +1,6 @@
 # HEADINGS!
 
-So, click the button to see what the computer thinks they will say. There is also right click of course. This is true.
+So, click the button to see what the computer thinks they will say. There is also right click of course. This is true. Also check this. Andthere is this
 
 But I'm telling you the truth is that it has the manpower and knows and arguably tries to assist you.
 
