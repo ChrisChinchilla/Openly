@@ -1,3 +1,4 @@
 unencrypted
 tls
 keystore
+reauthenticate

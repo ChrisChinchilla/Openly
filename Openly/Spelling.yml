@@ -3,18 +3,24 @@ extends: spelling
 message: "Did you really mean '%s'?"
 level: error
 code: false
+action:
+  name: suggest
+  params:
+    - spellings
 ignore:
-  - Openly/tech-terms/security.txt
-  - Openly/tech-terms/blockchain.txt
-  - Openly/tech-terms/devops.txt
-  - Openly/tech-terms/general.txt
-  - Openly/tech-terms/techwriting.txt
-  - Openly/tech-terms/mobile.txt
-  - Openly/tech-terms/java.txt
-  - Openly/tech-terms/linux.txt
-  - Openly/tech-terms/tech-slang.txt
-  - Openly/tech-terms/csharp.txt
-  - Openly/tech-terms/ddd.txt
-  - Openly/tech-terms/business.txt
-  - Openly/tech-terms/monitoring.txt
-  - Openly/tech-terms/apis.txt
+  - openly/tech-terms/security.txt
+  - openly/tech-terms/blockchain.txt
+  - openly/tech-terms/devops.txt
+  - openly/tech-terms/general.txt
+  - openly/tech-terms/techwriting.txt
+  - openly/tech-terms/mobile.txt
+  - openly/tech-terms/java.txt
+  - openly/tech-terms/linux.txt
+  - openly/tech-terms/tech-slang.txt
+  - openly/tech-terms/csharp.txt
+  - openly/tech-terms/ddd.txt
+  - openly/tech-terms/business.txt
+  - openly/tech-terms/monitoring.txt
+  - openly/tech-terms/apis.txt
+  - openly/tech-terms/geospatial.txt
+  - openly/tech-terms/javascript.txt

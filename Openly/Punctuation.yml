@@ -5,6 +5,8 @@ level: error
 scope: text
 ignorecase: false
 nonword: true
+action:
+  name: replace
 swap:
   e\.g\.: eg
   i\.e\.: ie
