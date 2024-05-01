@@ -4,8 +4,8 @@ python:
   - "3.6"
 install:
   # Install the latest release of Vale:
-  - wget https://github.com/errata-ai/vale/releases/download/v2.0.0-beta.2/vale_2.0.0-beta.2_Linux_64-bit.tar.gz
-  - mkdir bin && tar -xvzf vale_2.0.0-beta.2_Linux_64-bit.tar.gz -C bin
+  - wget https://github.com/errata-ai/vale/releases/download/v3.4.2/vale_3.4.2_Linux_64-bit.tar.gz
+  - mkdir bin && tar -xvzf vale_3.4.2_Linux_64-bit.tar.gz -C bin
   - export PATH=./bin:"$PATH"
 
   - bundle install --jobs=3
