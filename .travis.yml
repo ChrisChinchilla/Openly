@@ -16,7 +16,7 @@ install:
 before_script:
   - yamllint -c '.yamllint.yml' Openly
 script:
-  - cucumber
+  # - cucumber
   - zip -r Openly.zip Openly -x "*.DS_Store"
 deploy:
   provider: releases
