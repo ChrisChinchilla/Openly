@@ -2,6 +2,8 @@
 extends: substitution
 message: Use '%s' instead of '%s'
 level: warning
+action:
+  name: replace
 swap:
   African-American: African American
   Asian-American: Asian American
