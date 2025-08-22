@@ -4,7 +4,6 @@ A Vale linter style that attempts to emulate some features of the commercial, an
 
 __Not complete, and WIP, contributions welcome__.😁
 
-
 [![Build Status](https://travis-ci.org/testthedocs/Openly.svg?branch=master)](https://travis-ci.org/testthedocs/Openly) ![Vale version](https://img.shields.io/badge/vale-%3E%3D%20v1.7.0-blue.svg) ![license](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 This repository contains a [Vale-compatible](https://github.com/errata-ai/vale) that attempts to emulate some features of the commercial, and closed source, Grammarly. More to come.

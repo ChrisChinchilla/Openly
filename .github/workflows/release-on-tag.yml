@@ -1,0 +1,63 @@
+name: Release on Tag
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python 3.6
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.6'
+    
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '2.7'
+        bundler-cache: true
+    
+    - name: Install Vale
+      run: |
+        wget https://github.com/errata-ai/vale/releases/download/v3.4.2/vale_3.4.2_Linux_64-bit.tar.gz
+        mkdir bin && tar -xvzf vale_3.4.2_Linux_64-bit.tar.gz -C bin
+        echo "$PWD/bin" >> $GITHUB_PATH
+    
+    - name: Install Python dependencies
+      run: |
+        pip install yamllint
+        pip install markdata
+        pip install pyyaml
+    
+    - name: Run yamllint
+      run: yamllint -c '.yamllint.yml' Openly
+    
+    - name: Create release package
+      run: zip -r Openly.zip Openly -x "*.DS_Store"
+    
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref_name }}
+        release_name: Release ${{ github.ref_name }}
+        draft: false
+        prerelease: false
+    
+    - name: Upload Release Asset
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./Openly.zip
+        asset_name: Openly.zip
+        asset_content_type: application/zip

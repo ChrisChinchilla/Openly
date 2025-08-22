@@ -25,3 +25,4 @@ ignore:
   - Openly/tech-terms/geospatial.txt
   - Openly/tech-terms/javascript.txt
   - Openly/tech-terms/databases.txt
+  - Openly/tech-terms/bazel.txt
