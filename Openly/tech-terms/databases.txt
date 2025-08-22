@@ -1,0 +1,8 @@
+Supabase
+PostgreSQL
+MySQL
+MongoDB
+SQLite
+Redis
+Cassandra
+Elasticsearch
