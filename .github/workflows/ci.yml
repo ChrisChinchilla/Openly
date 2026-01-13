@@ -1,0 +1,56 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  release:
+    types: [created]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python 3.6
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10' 
+    
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        bundler-cache: true
+    
+    - name: Install Vale
+      run: |
+        wget https://github.com/errata-ai/vale/releases/download/v3.12.0/vale_3.12.0_Linux_64-bit.tar.gz
+        mkdir bin && tar -xvzf vale_3.12.0_Linux_64-bit.tar.gz -C bin
+        echo "$PWD/bin" >> $GITHUB_PATH
+    
+    - name: Install Python dependencies
+      run: |
+        pip install yamllint
+        pip install markdata
+        pip install pyyaml
+    
+    - name: Run yamllint
+      run: yamllint -c '.yamllint.yml' Openly
+    
+    - name: Create release package
+      if: github.event_name == 'release'
+      run: zip -r Openly.zip Openly -x "*.DS_Store"
+    
+    - name: Upload release asset
+      if: github.event_name == 'release'
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ github.event.release.upload_url }}
+        asset_path: ./Openly.zip
+        asset_name: Openly.zip
+        asset_content_type: application/zip

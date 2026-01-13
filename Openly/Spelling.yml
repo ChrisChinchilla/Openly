@@ -10,6 +10,7 @@ action:
 ignore:
   - Openly/tech-terms/ai.txt
   - Openly/tech-terms/apis.txt
+  - Openly/tech-terms/bazel.txt
   - Openly/tech-terms/blockchain.txt
   - Openly/tech-terms/business.txt
   - Openly/tech-terms/csharp.txt
