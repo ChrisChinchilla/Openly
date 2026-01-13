@@ -8,20 +8,21 @@ action:
   params:
     - spellings
 ignore:
-  - Openly/tech-terms/security.txt
+  - Openly/tech-terms/ai.txt
+  - Openly/tech-terms/apis.txt
   - Openly/tech-terms/blockchain.txt
+  - Openly/tech-terms/business.txt
+  - Openly/tech-terms/csharp.txt
+  - Openly/tech-terms/databases.txt
+  - Openly/tech-terms/ddd.txt
   - Openly/tech-terms/devops.txt
   - Openly/tech-terms/general.txt
-  - Openly/tech-terms/techwriting.txt
-  - Openly/tech-terms/mobile.txt
-  - Openly/tech-terms/java.txt
-  - Openly/tech-terms/linux.txt
-  - Openly/tech-terms/tech-slang.txt
-  - Openly/tech-terms/csharp.txt
-  - Openly/tech-terms/ddd.txt
-  - Openly/tech-terms/business.txt
-  - Openly/tech-terms/monitoring.txt
-  - Openly/tech-terms/apis.txt
   - Openly/tech-terms/geospatial.txt
+  - Openly/tech-terms/java.txt
   - Openly/tech-terms/javascript.txt
-  - Openly/tech-terms/databases.txt
+  - Openly/tech-terms/linux.txt
+  - Openly/tech-terms/mobile.txt
+  - Openly/tech-terms/monitoring.txt
+  - Openly/tech-terms/security.txt
+  - Openly/tech-terms/tech-slang.txt
+  - Openly/tech-terms/techwriting.txt
