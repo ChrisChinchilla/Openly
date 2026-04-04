@@ -1,0 +1,10 @@
+---
+extends: substitution
+message: "Use '%s' instead of '%s'"
+level: warning
+nonword: true
+swap:
+  'e\.g\.(?!,)': 'eg,'
+  'i\.e\.(?!,)': 'ie,'
+  '\beg\b(?!,)': 'eg,'
+  '\bie\b(?!,)': 'ie,'
