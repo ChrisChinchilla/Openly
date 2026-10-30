@@ -72,3 +72,7 @@ See the end of [AUDIT-RULES.md](AUDIT-RULES.md).
 
 Audience: product and technical documentation. Abbreviations: `e.g.,` and `i.e.,`. US English with Oxford comma. Keep `todo-issue.yml`. Package shape recommendation and pending items: AUDIT-RULES.md section G.
 Minimum Vale version: 3.23. AI-tell rules (B15) parked. Coverage manifest from a Grammarly feature list: future task.
+
+## Phase 0 progress (2026-10-30)
+
+Done, uncommitted: rule fixes (ThereIs, UnclearAntecedent, FutureTense, A11Y, Punctuation, Link, dead links, eg/ie spelling); Cucumber/Ruby harness replaced by `tests/run.sh` (golden `fixtures/*/expected.txt`, `--update` to regenerate); `pass.md` now produces zero alerts; workflows reduced to `ci.yml`, `release.yml` (tags `v*`), `codeql.yml` (actions language), `todo-issue.yml`, all pinned by SHA with least-privilege permissions; Vale 3.25.1 installed with checksum; Dependabot for Actions; `.travis.yml`, `release-on-tag.yml`, `Gemfile*`, `.ruby-version` removed. Security findings S1 to S8, S12, S13 addressed. Not yet done: S9 (provenance), S10 (`meta.json`), S11 (README owner partly), package restructure (AUDIT-RULES section G).

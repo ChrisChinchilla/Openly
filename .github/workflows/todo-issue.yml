@@ -1,15 +1,20 @@
+name: TODO to issue
+
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
-  build:
-
+  todo:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: read
+      issues: write
     steps:
-    - name: TODO to Issue
-      uses: alstr/todo-to-issue-action@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: alstr/todo-to-issue-action@37bb7b56e58569ef273b60678048030a7f0c261a # v5.1.15

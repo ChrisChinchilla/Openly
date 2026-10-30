@@ -2,55 +2,34 @@ name: CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
-  release:
-    types: [created]
+    branches: [main]
+
+permissions:
+  contents: read
+
+env:
+  VALE_VERSION: 3.25.1
+  # SHA-256 of vale_${VALE_VERSION}_Linux_64-bit.tar.gz, from the release's checksums file.
+  VALE_SHA256: 4bf5c5176b682b1da0830f471584d3494f1c2e27ee3029e1ad6f6661d4962182
 
 jobs:
   test:
     runs-on: ubuntu-latest
-    
     steps:
-    - uses: actions/checkout@v4
-    
-    - name: Set up Python 3.6
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.10' 
-    
-    - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        bundler-cache: true
-    
-    - name: Install Vale
-      run: |
-        wget https://github.com/errata-ai/vale/releases/download/v3.12.0/vale_3.12.0_Linux_64-bit.tar.gz
-        mkdir bin && tar -xvzf vale_3.12.0_Linux_64-bit.tar.gz -C bin
-        echo "$PWD/bin" >> $GITHUB_PATH
-    
-    - name: Install Python dependencies
-      run: |
-        pip install yamllint
-        pip install markdata
-        pip install pyyaml
-    
-    - name: Run yamllint
-      run: yamllint -c '.yamllint.yml' Openly
-    
-    - name: Create release package
-      if: github.event_name == 'release'
-      run: zip -r Openly.zip Openly -x "*.DS_Store"
-    
-    - name: Upload release asset
-      if: github.event_name == 'release'
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ github.event.release.upload_url }}
-        asset_path: ./Openly.zip
-        asset_name: Openly.zip
-        asset_content_type: application/zip
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Install Vale
+        run: |
+          archive="vale_${VALE_VERSION}_Linux_64-bit.tar.gz"
+          curl -fsSLO "https://github.com/errata-ai/vale/releases/download/v${VALE_VERSION}/${archive}"
+          echo "${VALE_SHA256}  ${archive}" | sha256sum --check
+          mkdir bin && tar -xzf "${archive}" -C bin
+          echo "$PWD/bin" >> "$GITHUB_PATH"
+
+      - name: Lint rule files
+        run: pipx run yamllint==1.37.1 -c .yamllint.yml Openly
+
+      - name: Run rule tests
+        run: tests/run.sh
