@@ -11,3 +11,7 @@ What is eg? Do you mean example or two thirds of an egg? And you have to use "am
 And try to keep your prose short, not have really really really long passages that go on and on for no real reason apart from to use lots of words.
 
 Don't make spulling mistakes, but certain technical terms such as nuget or linter are fine.
+
+Intro text. There is a bug. This is a bug. We'll fix it, and you'll see.
+
+See [click here](#) or [read more](#) for details, e.g. a list, or i.e. this one.

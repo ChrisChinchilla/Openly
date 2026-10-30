@@ -1,13 +1,11 @@
 # Headings
 
-Click the button to see what the computer thinks. You can also use right click of course. This is true.
+Select the button to see what the tool reports. Right-click the icon for more options.
 
-But I'm telling you the truth is that it has the manpower and knows and arguably tries to assist you.
+The report is short and clear. Read the [installation guide](#) for the details.
 
-Here is a link that [links to the documentation](#)
+Use a form, e.g., a login form. Use a list, i.e., a bullet list.
 
-What is e.g.? Do you mean example or two thirds of an egg? And you have to use "American quotes." Talking of quotes, we don't mind if you use "dumb" ones, or "smart" ones but keep it consistent.
+Check the "American quotes" and the "consistent" ones.
 
-And try to keep your prose short.
-
-Don't make spelling mistakes, but certain technical terms such as nuget or linter are fine.
+Spell every word correctly, and use JavaScript and nuget as written.

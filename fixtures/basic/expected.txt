@@ -1,0 +1,29 @@
+fail.md:1:3:Openly.Titles:'HEADINGS!' should be in sentence case
+fail.md:3:5:Openly.A11Y:Consider using 'select' instead of 'click'
+fail.md:3:38:Openly.Anthropomorphism:Don't attribute human qualities to software or hardware.
+fail.md:3:59:Openly.FutureTense:Possible future tense.
+fail.md:3:69:Openly.ThereIs:Don't start a sentence with 'There is'
+fail.md:3:83:Openly.Hyphens:Use 'right-click' instead of 'right click'
+fail.md:3:106:Openly.UnclearAntecedent:'This is' is an unclear antecedent
+fail.md:3:137:Openly.Spelling:Did you really mean 'Andthere'?
+fail.md:5:1:Openly.But:Do not start a paragraph with a 'but'.
+fail.md:5:5:Openly.E-Prime:Avoid using "I'm"
+fail.md:5:50:Openly.GenderBias:Consider using 'human resources' instead of 'manpower'
+fail.md:5:73:Openly.Hedging:Consider removing 'arguably'
+fail.md:7:22:Openly.Link:Don't use 'here' as link text. Describe where the link goes.
+fail.md:9:9:Openly.Punctuation:Use 'e.g.,' instead of 'eg'
+fail.md:9:79:Openly.Spelling:Did you really mean 'american'?
+fail.md:9:163:Openly.QuoteType:Inconsistent use of '”' ('smart' mixed with 'dumb')
+fail.md:11:1:Openly.SentenceLength:Write short sentences (less than 25 words).
+fail.md:13:12:Openly.Spelling:Did you really mean 'spulling'?
+fail.md:15:13:Openly.ThereIs:Don't start a sentence with 'There is'
+fail.md:15:29:Openly.UnclearAntecedent:'This is' is an unclear antecedent
+fail.md:15:44:Openly.FutureTense:Possible future tense.
+fail.md:15:62:Openly.FutureTense:Possible future tense.
+fail.md:17:6:Openly.A11Y:Consider using 'select' instead of 'click'
+fail.md:17:6:Openly.Link:Don't use 'click here' as link text. Describe where the link goes.
+fail.md:17:25:Openly.Link:Don't use 'read more' as link text. Describe where the link goes.
+fail.md:17:52:Openly.Punctuation:Use 'e.g.,' instead of 'e.g.'
+fail.md:17:68:Openly.Punctuation:Use 'i.e.,' instead of 'i.e.'
+real.md:4:4:Openly.E-Prime:Avoid using "you're"
+real.md:4:19:Openly.Spelling:Use 'JavaScript' instead of 'javascript'.
