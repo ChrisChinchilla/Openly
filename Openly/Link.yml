@@ -1,8 +1,8 @@
 ---
-message: "Don't use 'here' as the content of a link."
 extends: existence
+message: "Don't use '%s' as link text. Describe where the link goes."
 ignorecase: true
-scope: raw
+scope: link
 level: error
 raw:
-  - '\[here\]\(.+\)'
+  - '^\s*(?:click here|here|this link|this page|read more|learn more|more|link)\s*$'
