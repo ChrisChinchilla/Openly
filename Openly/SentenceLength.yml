@@ -1,7 +1,7 @@
 ---
 message: "Write short sentences (less than 25 words)."
 extends: occurrence
-link: http://styleguide.mailchimp.com/writing-for-accessibility/#header-3-use-plain-language
+link: https://www.plainlanguage.gov/guidelines/concise/write-short-sentences/
 scope: sentence
 level: warning
 max: 25
