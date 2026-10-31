@@ -3,8 +3,11 @@ extends: substitution
 message: "Use '%s' instead of '%s'"
 level: warning
 nonword: true
+action:
+  name: replace
 swap:
-  'e\.g\.(?!,)': 'eg,'
-  'i\.e\.(?!,)': 'ie,'
-  '\beg\b(?!,)': 'eg,'
-  '\bie\b(?!,)': 'ie,'
+  # Always followed by a comma. The lookahead stops the fix swallowing an existing one.
+  '\be\.g\.(?!,)': 'e.g.,'
+  '\bi\.e\.(?!,)': 'i.e.,'
+  '\beg\b(?!,)': 'e.g.,'
+  '\bie\b(?!,)': 'i.e.,'

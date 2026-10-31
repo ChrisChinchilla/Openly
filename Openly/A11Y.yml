@@ -2,8 +2,10 @@
 extends: substitution
 message: Consider using '%s' instead of '%s'
 ignorecase: true
-level: error
+matchcase: true
+level: suggestion
 action:
   name: replace
 swap:
-  (?:click|press): "'select'"
+  # Skip "right-click" and "double-click", which have no direct equivalent.
+  (?<!right[- ])(?<!double[- ])click: select

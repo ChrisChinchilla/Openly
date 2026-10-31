@@ -1,10 +1,9 @@
+---
 extends: existence
 message: "Possible future tense."
 ignorecase: true
-level: warning
+level: suggestion
 tokens:
   - will
-  - '[\w][ll]'
-  - we are going
-  - would-be
-  - would be
+  - "\\w+'ll"
+  - "(?:am|is|are) going to"
