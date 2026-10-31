@@ -4,7 +4,7 @@ A Vale linter style that attempts to emulate some features of the commercial, an
 
 **Not complete, and WIP, contributions welcome**.😁
 
-[![Build Status](https://travis-ci.org/testthedocs/Openly.svg?branch=master)](https://travis-ci.org/testthedocs/Openly) ![Vale version](https://img.shields.io/badge/vale-%3E%3D%20v1.7.0-blue.svg) ![license](https://img.shields.io/github/license/mashape/apistatus.svg)
+[![CI](https://github.com/ChrisChinchilla/Openly/actions/workflows/ci.yml/badge.svg)](https://github.com/ChrisChinchilla/Openly/actions/workflows/ci.yml) ![license](https://img.shields.io/github/license/ChrisChinchilla/Openly)
 
 This repository contains a [Vale-compatible](https://github.com/errata-ai/vale) that attempts to emulate some features of the commercial, and closed source, Grammarly. More to come.
 
@@ -28,7 +28,7 @@ BasedOnStyles = Openly
 
 ### Download manually
 
-Download the [latest release](https://github.com/testthedocs/Openly/releases), copy the "Openly" directory to your `StylesPath`, and include it in your configuration file:
+Download the [latest release](https://github.com/ChrisChinchilla/Openly/releases), copy the "Openly" directory to your `StylesPath`, and include it in your configuration file:
 
 ```ini
 # This goes in a file named either `.vale.ini` or `_vale.ini`.
@@ -42,3 +42,7 @@ BasedOnStyles = Openly
 ```
 
 See [Usage](https://github.com/errata-ai/vale/#usage) for more information.
+
+## Testing
+
+Install [Vale](https://vale.sh) and run `tests/run.sh`. Each directory in `fixtures/` holds Markdown files and an `expected.txt` with the alerts Vale should raise. After an intentional rule change, run `tests/run.sh --update` and review the diff.
