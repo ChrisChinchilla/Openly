@@ -9,3 +9,7 @@ Use a form, e.g., a login form. Use a list, i.e., a bullet list.
 Check the "American quotes" and the "consistent" ones.
 
 Spell every word correctly, and use JavaScript and nuget as written.
+
+## Heading without punctuation
+
+Run the build and validate the output.

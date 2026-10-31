@@ -32,6 +32,10 @@ Date: 2026-10-30. Scope: whole repository, including CI. The repo contains no ex
 - `GenderBias` and `Hyphens` embed opinionated or US-centric substitutions at `error` level (for example `landlord -> building manager`, `African-American -> African American`). They do not harm users technically, but at `error` level they can fail a consumer's CI build on unobjectionable text. Treated as a quality issue in AUDIT-RULES.
 - `Spelling` at `error` level with a small allow-list will fail builds for any ordinary product or proper name.
 
+## Status (2026-10-31)
+
+Addressed in commits `45a3e92` onward: S1, S2, S3, S4, S5, S6, S7, S8, S12, S13, S14. Open: S9, S10. S11 is resolved in the README; only the `origin` remote URL differs. The workflows have run once; CodeQL output was not yet reviewed.
+
 ## Suggested order
 
 1. S1, S2, S8, S13: remove the redundant release workflows and Travis config.

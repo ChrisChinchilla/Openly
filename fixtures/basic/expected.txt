@@ -1,3 +1,8 @@
+fail-more.md:1:1:Openly.Readability:Try to keep the Flesch reading ease score (-50.34) above 70.
+fail-more.md:1:27:Openly.HeadingsPunctuation:Do not use '.' at the end of headings
+fail-more.md:3:21:Openly.Clarity:Consider using 'assist' instead of 'help'
+fail-more.md:3:33:Openly.So:Don't start a sentence with 'So'
+fail-more.md:3:55:Openly.VerbingNouns:Simplify 'perform validation' by removing the first word and making the last word a verb.
 fail.md:1:3:Openly.Titles:'HEADINGS!' should be in sentence case
 fail.md:3:5:Openly.A11Y:Consider using 'select' instead of 'click'
 fail.md:3:38:Openly.Anthropomorphism:Don't attribute human qualities to software or hardware.
@@ -12,6 +17,7 @@ fail.md:5:50:Openly.GenderBias:Consider using 'human resources' instead of 'manp
 fail.md:5:73:Openly.Hedging:Consider removing 'arguably'
 fail.md:7:22:Openly.Link:Don't use 'here' as link text. Describe where the link goes.
 fail.md:9:9:Openly.Punctuation:Use 'e.g.,' instead of 'eg'
+fail.md:9:9:Openly.Spelling:Did you really mean 'eg'?
 fail.md:9:79:Openly.Spelling:Did you really mean 'american'?
 fail.md:9:163:Openly.QuoteType:Inconsistent use of '”' ('smart' mixed with 'dumb')
 fail.md:11:1:Openly.SentenceLength:Write short sentences (less than 25 words).
